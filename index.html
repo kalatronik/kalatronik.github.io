@@ -1,29 +1,106 @@
----
-layout: default
-title: KALATRONIK - Komplex Tűzvédelem
----
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALATRONIK - Komplex Tűzvédelem</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="cdn.jsdelivr.net" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="cdn.jsdelivr.net">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images.unsplash.com');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            border: none;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+        }
+        .icon-box {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
 
-<div class="hero-section">
-    <h1>KALATRONIK</h1>
-    <p class="subtitle">Komplex Tűzvédelmi Kivitelezés</p>
-</div>
+    <!-- Hero szekció -->
+    <header class="hero-bg text-center">
+        <div class="container">
+            <h1 class="display-1 fw-bold tracking-tight">KALATRONIK</h1>
+            <p class="lead fs-3 text-uppercase text-danger fw-bold">Komplex Tűzvédelmi Kivitelezés</p>
+            <hr class="w-25 mx-auto border-light opacity-75">
+        </div>
+    </header>
 
-<div class="services-container">
-    <div class="service-card vizes">
-        <div class="icon">💧</div>
-        <h2>Vizes rendszerek</h2>
-        <p>Sprinkler telepítés és karbantartás</p>
-    </div>
+    <!-- Szolgáltatások szekció -->
+    <section class="container my-5">
+        <div class="row g-4">
+            
+            <!-- Vizes rendszerek -->
+            <div class="col-md-4">
+                <div class="card service-card shadow-sm border-top border-primary border-5">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box text-primary">
+                            <i class="bi bi-droplet-fill"></i>
+                        </div>
+                        <h3 class="card-title h4 fw-bold">Vizes rendszerek</h3>
+                        <p class="card-text text-muted">Sprinkler telepítés és karbantartás</p>
+                        <span class="badge bg-primary">Vízszállítás</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="service-card passziv">
-        <div class="icon">🛡️</div>
-        <h2>Passzív tűzvédelem</h2>
-        <p>Minősített tűzgátló lezárások</p>
-    </div>
+            <!-- Passzív tűzvédelem -->
+            <div class="col-md-4">
+                <div class="card service-card shadow-sm border-top border-danger border-5">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box text-danger">
+                            <i class="bi bi-shield-lock-fill"></i>
+                        </div>
+                        <h3 class="card-title h4 fw-bold">Passzív tűzvédelem</h3>
+                        <p class="card-text text-muted">Minősített tűzgátló lezárások</p>
+                        <span class="badge bg-danger">Biztonság</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="service-card szakipar">
-        <div class="icon">💎</div>
-        <h2>Szakipari háttér</h2>
-        <p>Precíziós betonfúrás (gyémánttechnikával)</p>
-    </div>
-</div>
+            <!-- Szakipari háttér -->
+            <div class="col-md-4">
+                <div class="card service-card shadow-sm border-top border-secondary border-5">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box text-secondary">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <h3 class="card-title h4 fw-bold">Szakipari háttér</h3>
+                        <p class="card-text text-muted">Precíziós betonfúrás (gyémánttechnikával)</p>
+                        <span class="badge bg-secondary">Ipari technológia</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Kapcsolati gomb (Call to Action) -->
+    <footer class="text-center py-5">
+        <div class="container">
+            <p class="text-muted">Profi megoldások a tűzvédelem területén.</p>
+            <a href="mailto:info@kalatronik.hu" class="btn btn-dark btn-lg px-5">Vegye fel velünk a kapcsolatot</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (opcionális, de ajánlott) -->
+    <script src="cdn.jsdelivr.net"></script>
+</body>
+</html>
+
